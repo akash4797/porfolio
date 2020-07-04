@@ -1,0 +1,473 @@
+@import url("../css/fonts.css");
+
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  /*  theme color*/
+
+  --text-gray: #3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #104f55;
+  --light-white: #aebbcb;
+  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  /*  Gradient Color*/
+
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+  /* Theme Font Family  */
+
+  --port: "Port", cursive;
+  --lexend: "Lexend", cursive;
+  --cinzel: "Cinzel", "cursive";
+  --playfair: "playfair", "cursive";
+  --rajdhani: "Rajdhani", "cursive";
+}
+
+/*-------Global Clasess-------*/
+
+a {
+  text-decoration: none;
+  color: var(--text-gray);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: var(--port);
+  font-size: 2.6rem;
+  color: var(--text-gray);
+}
+
+h2 {
+  font-family: var(--lexend);
+  font-size: 2.2rem;
+  color: var(--text-gray);
+}
+
+h3 {
+  font-family: var(--lexend);
+  font-size: 1.3rem;
+  color: var(--text-gray);
+}
+
+h4 {
+  font-family: var(--port);
+  font-size: 1.1rem;
+  color: var(--text-gray);
+}
+
+p.para {
+  color: var(--text-gray);
+  font: normal 500 16px/25px var(--port);
+}
+
+.button {
+  border: 3px sloid transparent;
+  margin-top: 1.2rem;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-family: var(--lexend);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button.primary-button {
+  background: var(--sky);
+  box-shadow: var(--box-shadow);
+  color: var(--text-gray);
+}
+
+.button.primary-button:hover {
+  background: whitesmoke;
+  color: black;
+}
+
+.button.secondary-button {
+  background: var(--midnight);
+  color: #0f0f0f;
+}
+
+.button.secondary-button:hover {
+  background: black;
+  color: whitesmoke;
+}
+
+button:focus,
+button:active .button.primary-button:hover btn.active,
+.btn.active {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+.white-popup {
+  position: relative;
+  background: white;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 2px auto;
+}
+
+.popup-scroll {
+  /* Overflow Scroll */
+  overflow-y: scroll;
+  max-height: 500px;
+  padding: 0 1em 0 0;
+  padding-top: 1rem;
+}
+
+.popup-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.popup-scroll p {
+  font-family: var(--port);
+}
+
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  box-shadow: var(--box-shadow);
+  z-index: 999;
+  transition: background 1s ease;
+}
+
+/*---x---Global Clasess---x---*/
+
+/*-------------navbar---------*/
+
+.header_area .main_menu .navbar .navbar-brand {
+  padding: 0 3rem 0 5rem;
+}
+
+.header_area .main_menu .nav-item .nav-link {
+  font-family: var(--lexend);
+  padding: 1.7rem;
+}
+
+.header_area .main_menu .navbar-nav .active a {
+  background: var(--sky);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header_area .main_menu .navbar-nav a:hover {
+  background: var(--sky);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/*------x------navbar----x----*/
+
+/*------------Main--------------*/
+
+main {
+  background: url("../assests/background.svg");
+  background-size: contain;
+  overflow: hidden;
+}
+
+/*------------Site Title----------*/
+
+main .site-title {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: url(../assests/akash.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+main .mypic {
+  bottom: 7.6rem;
+}
+
+main .starting-div {
+  flex-wrap: wrap;
+}
+
+main .site-background {
+  text-align: right;
+  color: var(--white);
+}
+
+main .site-title .mypic .button-class {
+  align-self: center;
+}
+
+main .site-title .mypic .svg-class {
+  align-self: flex-end;
+  position: absolute;
+}
+
+main .site-title h1,
+h3,
+h4 {
+  margin: 1.3rem;
+  overflow: hidden;
+}
+
+main .site-title .site-background .typed-text {
+  font-family: var(--port);
+  font-size: 1.1rem;
+  color: var(--text-gray);
+}
+
+main .site-title .site-background .cursor {
+  display: inline-block;
+  width: 1px;
+  background-color: var(--text-gray);
+  margin: 0.1rem;
+  animation: blink 1s infinite;
+}
+
+main .site-title .site-background .cursor-typing {
+  display: inline-block;
+  width: 1px;
+  background-color: var(--text-gray);
+  animation: none;
+}
+
+@keyframes blink {
+  0% {
+    background-color: var(--text-gray);
+  }
+  49% {
+    background-color: var(--text-gray);
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: var(--text-gray);
+  }
+}
+
+/*------------Site Title----------*/
+
+/*-----------------Profile------------------*/
+
+main .about-area {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  background: #0f0f0f;
+  opacity: 0.9;
+}
+
+main .about-area .about-text h2 > span {
+  font-family: var(--port);
+  color: white;
+  font-size: 2.6rem;
+  letter-spacing: 10px;
+}
+
+main .about-area .about-image img {
+  width: 35%;
+  border-radius: 50%;
+  margin-top: 30%;
+  margin-left: 40%;
+  margin-right: 60%;
+  filter: contrast(1.2);
+}
+
+/*--------x--------Profile--------x---------*/
+
+/*-----------------services------------------*/
+
+main .services-area {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+main .services-area .service-title {
+  padding: 0 14rem;
+}
+
+main > .services-area .services {
+  background: rgba(248, 252, 253, 0.973);
+  padding: 2rem 0;
+  width: 16rem;
+  margin: 5rem 0.5rem;
+  transition: box-shadow 0.7s ease;
+}
+
+main > .services-area .services:hover {
+  box-shadow: var(--box-shadow);
+}
+
+main .services-area .title-text {
+  letter-spacing: 10px;
+}
+
+main .services-area .card-body p {
+  font-family: var(--port);
+}
+
+/*-----------------services------------------*/
+
+/*------------------Project Area--------------*/
+
+main .project-area {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background: #0f0f0f;
+  opacity: 0.9;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+main .project-area .button-group {
+  padding-bottom: 2rem;
+}
+
+main .project-area .button-group button {
+  background: transparent;
+  border: none;
+  font-family: var(--port);
+  color: white;
+  text-transform: uppercase;
+}
+
+main .project-area .button-group button + button {
+  padding-left: 5rem;
+}
+
+main .project-area .grid .our-project .img a:hover img {
+  transform: scale(1.1);
+  filter: contrast(1.2);
+}
+
+main .project-area h1 {
+  letter-spacing: 10px;
+  color: white;
+}
+
+main .project-area .grid .our-project > .title h6 {
+  font: normal 700 15px/12px var(--port);
+  color: white;
+}
+
+.white-popup .popup-scroll .ifr iframe,
+.white-popup .popup-scroll .ifr embed {
+  min-width: 430px;
+  min-height: 250px;
+}
+
+/*------------------Project Area--------------*/
+
+/*------x-----Main--------x-----*/
+
+/*------------------footer---------------------*/
+
+footer.footer-area {
+  padding: 5rem 0;
+  background: black;
+}
+
+footer.footer-area .social h5 {
+  font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i {
+  font-size: 22px;
+  padding: 2rem;
+  color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i {
+  color: var(--primary-color);
+}
+
+/*---------x--------footer-------x-------------*/
+
+/*---------View Port----------*/
+
+@media only screen and (max-width: 575px) {
+  main .mypic {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 494px) {
+  .header_area .main_menu .navbar .navbar-brand {
+    padding: 0 0 0 0;
+  }
+
+  main {
+    background: url("../assests/background-mobile.svg");
+    background-size: contain;
+    overflow: hidden;
+  }
+
+  main .site-title {
+    height: 92vh;
+  }
+
+  main .site-background {
+    padding-top: 3rem;
+    text-align: center;
+    color: var(--white);
+    margin-left: 0rem;
+  }
+
+  main .mypic {
+    opacity: 0;
+  }
+
+  main .about-area .about-text .paragraph {
+    margin-left: 2rem;
+  }
+  main .about-area .about-text .paragraph > p {
+    text-align: center;
+  }
+
+  main .about-area .about-image img {
+    width: 35%;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-left: 30%;
+  }
+
+  main .about-area button {
+    margin-left: 20%;
+  }
+
+  main .project-area .button-group button + button {
+    padding-left: 0.3rem;
+    padding-top: 1rem;
+  }
+
+  .white-popup .popup-scroll .ifr iframe,
+  .white-popup .popup-scroll .ifr embed {
+    min-width: 260px;
+    min-height: 160px;
+  }
+}
+
+/*----x----View Port-----x----*/

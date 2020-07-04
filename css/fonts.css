@@ -1,0 +1,26 @@
+
+
+@font-face{
+    font-family:Port;
+    src:url('../fonts/Port_Lligat_Sans/PortLligatSans-Regular.ttf');
+}
+
+@font-face{
+    font-family:Lexend;
+    src:url('../fonts/Lexend_Deca/LexendDeca-Regular.ttf');
+}
+
+@font-face{
+    font-family:Cinzel;
+    src:url('../fonts/Cinzel/Cinzel-Regular.ttf');
+}
+
+@font-face{
+    font-family:playfair;
+    src:url('../fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf');
+}
+
+@font-face{
+    font-family:Rajdhani;
+    src:url('../fonts/Rajdhani/Rajdhani-Regular.ttf');
+}

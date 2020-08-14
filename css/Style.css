@@ -12,6 +12,7 @@ body {
   /*  theme color*/
 
   --text-gray: #3f4954;
+  --text-gray2: #818181;
   --text-light: #686666da;
   --bg-color: #0f0f0f;
   --white: #ffffff;
@@ -72,8 +73,12 @@ h4 {
   color: var(--text-gray);
 }
 
+b{
+  color: white;
+}
+
 p.para {
-  color: var(--text-gray);
+  color: var(--text-gray2);
   font: normal 500 16px/25px var(--port);
 }
 
@@ -191,11 +196,10 @@ main {
 /*------------Site Title----------*/
 
 main .site-title {
-  height: 85vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: url(../assests/akash.svg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -206,21 +210,22 @@ main .mypic {
 }
 
 main .starting-div {
+  justify-content: center;
   flex-wrap: wrap;
+  transform: translateY(-100px);
 }
 
 main .site-background {
-  text-align: right;
+  text-align: center;
   color: var(--white);
+}
+
+main .site-background img{
+  width: 200px;
 }
 
 main .site-title .mypic .button-class {
   align-self: center;
-}
-
-main .site-title .mypic .svg-class {
-  align-self: flex-end;
-  position: absolute;
 }
 
 main .site-title h1,
@@ -287,12 +292,19 @@ main .about-area .about-text h2 > span {
   letter-spacing: 10px;
 }
 
+main .about-area .about-image{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+main .about-area button {
+  width: 200px;
+}
+
 main .about-area .about-image img {
-  width: 35%;
+  width: 200px;
   border-radius: 50%;
-  margin-top: 30%;
-  margin-left: 40%;
-  margin-right: 60%;
   filter: contrast(1.2);
 }
 
@@ -436,26 +448,25 @@ footer.footer-area .social a:hover > i {
     margin-left: 0rem;
   }
 
-  main .mypic {
-    opacity: 0;
+
+  main .about-area .about-image img {
+    width: 150px;
   }
 
-  main .about-area .about-text .paragraph {
-    margin-left: 2rem;
-  }
   main .about-area .about-text .paragraph > p {
     text-align: center;
   }
 
-  main .about-area .about-image img {
-    width: 35%;
-    border-radius: 50%;
-    margin-top: 10%;
-    margin-left: 30%;
-  }
 
   main .about-area button {
-    margin-left: 20%;
+    margin-left: 50%;
+    transform: translateX(-100px);
+  }
+
+  .midi-service{
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
 
   main .project-area .button-group button + button {

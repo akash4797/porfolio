@@ -165,6 +165,10 @@ button:active .button.primary-button:hover btn.active,
   padding: 0 3rem 0 5rem;
 }
 
+.navbar-brand img{
+  width: 70px;
+}
+
 .header_area .main_menu .nav-item .nav-link {
   font-family: var(--lexend);
   padding: 1.7rem;
